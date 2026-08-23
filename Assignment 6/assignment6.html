@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <form>
+          <label>Username: <input type="text" name="username"></label><br><br>
+     
+          <label>Password: <input type="password" name="password"></label><br><br>
+     
+          <label>City of Employment: <input type="text" name="city"></label><br><br>
+     
+          <label>Web server:
+               <select name="web_server">
+                    <option value="" selected>— Choose a server —</option>
+                    <option value="server1">Server 1</option>
+                    <option value="server2">Server 2</option>
+               </select>
+          </label><br><br>
+     
+          Please specify your role:<br>
+          <input type="radio" id="admin" name="role" value="Admin">
+          <label for="admin">Admin</label><br>
+          <input type="radio" id="engineer" name="role" value="Engineer">
+          <label for="engineer">Engineer</label><br>
+          <input type="radio" id="manager" name="role" value="Manager">
+          <label for="manager">Manager</label><br>
+          <input type="radio" id="guest" name="role" value="Guest">
+          <label for="guest">Guest</label><br><br>
+     
+          Single Sign-on to the following:<br>
+          <input type="checkbox" id="mail" name="sso" value="Mail">
+          <label for="mail">Mail</label><br>
+          <input type="checkbox" id="payroll" name="sso" value="Payroll">
+          <label for="payroll">Payroll</label><br>
+          <input type="checkbox" id="self-service" name="sso" value="Self-service">
+          <label for="self-service">Self-service</label><br><br>
+     
+          <input type="submit" value="Login">
+          <input type="reset" value="Reset">
+     </form>
+     
+     <hr>
+     
+     <form>
+          <h2>Student Registration Form</h2>
+     
+          <label>Roll no. : <input type="text" name="roll"></label><br><br>
+     
+          <label>Student name :
+               <input type="text" name="firstname" placeholder="First Name"> -
+               <input type="text" name="lastname" placeholder="Last Name">
+          </label><br><br>
+     
+          <label>Father's name : <input type="text" name="father_name"></label><br><br>
+     
+          <label>Date of birth :
+               <input type="text" name="dob_day" size="3" placeholder="Day"> -
+               <input type="text" name="dob_month" size="5" placeholder="Month"> -
+               <input type="text" name="dob_year" size="5" placeholder="Year">
+               <em>(DD-MM-YYYY)</em>
+          </label><br><br>
+     
+          <label>Mobile no. :
+               <input type="text" name="country_code" value="+91" size="3"> -
+               <input type="text" name="mobile">
+          </label><br><br>
+     
+          <label>Email id : <input type="email" name="email"></label><br><br>
+     
+          <label>Password : <input type="password" name="password"></label><br><br>
+     
+          <label>Gender : </label>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label><br><br>
+     
+          <label>Department : </label>
+          <input type="checkbox" id="cse" name="dept" value="CSE">
+          <label for="cse">CSE</label>
+          <input type="checkbox" id="it" name="dept" value="IT">
+          <label for="it">IT</label>
+          <input type="checkbox" id="ece" name="dept" value="ECE">
+          <label for="ece">ECE</label>
+          <input type="checkbox" id="civil" name="dept" value="Civil">
+          <label for="civil">Civil</label>
+          <input type="checkbox" id="mech" name="dept" value="Mech">
+          <label for="mech">Mech</label><br><br>
+     
+          <label>Course :
+               <select name="course">
+                    <option value="" selected>----------------------- Select Current Course's -----------------------
+                    </option>
+                    <option value="btech">B.Tech</option>
+                    <option value="mtech">M.Tech</option>
+                    <option value="bsc">B.Sc</option>
+               </select>
+          </label><br><br>
+     
+          <label>Student photo : <input type="file" name="photo"></label><br><br>
+     
+          <label>City : <input type="text" name="city"></label><br><br>
+     
+          <label>Address : <textarea name="address" rows="4" cols="30"></textarea></label><br><br>
+     
+          <input type="submit" value="Register">
+     </form>
+     
+     <hr>
+     
+     <form>
+          <h3><u>Registration form</u></h3>
+     
+          <label>First Name <input type="text" name="first_name"></label><br><br>
+     
+          <label>Last Name <input type="text" name="last_name"></label><br><br>
+     
+          <label>Nick Name <input type="text" name="nick_name"></label><br><br>
+     
+          <label>e-mail <input type="email" name="email"></label><br><br>
+     
+          <label>Password <input type="password" name="password"></label><br><br>
+     
+          <label>Date of Birth <input type="text" name="dob"></label><br><br>
+     
+          <label>Gender </label>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+          <input type="radio" id="others" name="gender" value="Others">
+          <label for="others">Others</label><br><br>
+     
+          <label>Mobile <input type="text" name="mobile"></label><br><br>
+     
+          <label>Address<textarea name="address" rows="4" cols="30" height="50%"></textarea></label><br><br>
+     
+          <input type="submit" value="submit">
+          <input type="reset" value="reset">
+     </form>
+</body>
+</html>
