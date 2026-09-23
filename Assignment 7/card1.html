@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Cards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      gap: 55px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: 415px;
+      height: 595px;
+      border: 2px solid #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 55px 28px;
+      background: #fff;
+    }
+
+    .card.instagram {
+      background: #e52d6b;
+      border-color: #e52d6b;
+      color: white;
+    }
+
+    .icon {
+      height: 115px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .icon i {
+      font-size: 80px;
+      color: #000;
+    }
+
+    .instagram .icon i {
+      color: #fff;
+    }
+
+    .icon img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .social-card i {
+
+    font-size: 42px;
+
+    margin-bottom: 18px;
+
+    color: black;
+}
+
+    .title {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #000;
+    }
+
+    .instagram .title {
+      color: #fff;
+    }
+
+    .description {
+      max-width: 340px;
+      font-size: 24px;
+      line-height: 1.45;
+      color: #222;
+      margin-bottom: 35px;
+    }
+
+    .instagram .description {
+      color: #fff;
+    }
+
+    .button {
+      width: 355px;
+      height: 70px;
+      border: none;
+      border-radius: 40px;
+      background: #000;
+      color: #fff;
+      font-size: 21px;
+      cursor: pointer;
+      margin-top: auto;
+    }
+
+    .instagram .button {
+      background: #fff;
+      color: #e52d6b;
+    }
+
+    .button:hover {
+      opacity: 0.85;
+    }
+
+#switch
+      {
+    position: absolute;
+    top: 20px;              
+    padding: 10px 18px;
+    background-color: #ffffff25;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    right: 20px;
+    }
+    #switch:hover {
+    background-color: #e52d6b;
+}
+
+#switch a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Twitter -->
+    <div class="card">
+      <div class="icon">
+        <!-- Twitter icon -->
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+
+      <h2 class="title">TWITTER</h2>
+
+      <p class="description">
+        Lorem ipsum dolor sit amet,<br>
+        consectetur adipisicing elit.<br>
+        Expedita ullam aliquid non<br>
+        eligendi, nemo ost neque<br>
+        reiciendis error?
+      </p>
+
+      <button class="button">READ MORE</button>
+    </div>
+
+
+    <!-- Instagram -->
+    <div class="card instagram">
+      <div class="icon">
+        <!-- Instagram icon -->
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
+      <h2 class="title">INSTAGRAM</h2>
+
+      <p class="description">
+        Lorem ipsum dolor sit amet,<br>
+        consectetur adipisicing elit.<br>
+        Expedita ullam aliquid non<br>
+        eligendi, nemo ost neque<br>
+        reiciendis error?
+      </p>
+
+      <button class="button">READ MORE</button>
+    </div>
+
+
+    <!-- YouTube -->
+    <div class="card">
+      <div class="icon">
+        <!-- YouTube icon -->
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <h2 class="title">YOUTUBE</h2>
+
+      <p class="description">
+        Lorem ipsum dolor sit amet,<br>
+        consectetur adipisicing elit.<br>
+        Expedita ullam aliquid non<br>
+        eligendi, nemo ost neque<br>
+        reiciendis error?
+      </p>
+
+      <button class="button">READ MORE</button>
+    </div>
+
+  </div>
+<div>
+<button id="switch"><a href="card2.html">Next page →</a></button>
+</div>
+
+</body>
+</html>

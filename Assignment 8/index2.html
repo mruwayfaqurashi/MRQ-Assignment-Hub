@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Minimal Navbar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #f7f8f8;
+
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+      width: 380px;
+      height: 40px;
+
+      display: flex;
+      align-items: center;
+
+      padding: 3px;
+
+      background: #111;
+
+      border: 3px solid #111;
+      border-radius: 50px;
+
+      box-shadow:
+        0 7px 10px rgba(0, 0, 0, 0.25),
+        0 15px 20px rgba(0, 0, 0, 0.10);
+    }
+
+
+    /* =========================
+       LOGO
+    ========================= */
+
+    .logo {
+      width: 30px;
+      height: 30px;
+
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #fff;
+
+      border-radius: 50%;
+
+      color: #111;
+      font-size: 15px;
+
+      margin-right: 14px;
+    }
+
+
+    /* =========================
+       NAV LINKS
+    ========================= */
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+
+      list-style: none;
+
+      flex: 1;
+    }
+
+    .nav-links a {
+      color: #fff;
+
+      text-decoration: none;
+
+      font-size: 10px;
+      font-weight: 400;
+
+      white-space: nowrap;
+
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.65;
+    }
+
+
+    /* =========================
+       EMAIL BUTTON
+    ========================= */
+
+    .email {
+      height: 30px;
+
+      display: flex;
+      align-items: center;
+
+      padding: 0 14px;
+
+      background: #fff;
+
+      border-radius: 50px;
+
+      color: #111;
+
+      font-size: 9px;
+
+      text-decoration: none;
+
+      white-space: nowrap;
+
+      transition: transform 0.2s ease;
+    }
+
+    .email:hover {
+      transform: scale(1.03);
+    }
+
+    #switchN
+      {
+    position: absolute;
+    top: 20px;              
+    padding: 10px 18px;
+    background-color: #ffffff25;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    right: 20px;
+    }
+    #switchN:hover {
+    background-color: #010101;
+}
+
+#switchN a{
+    text-decoration: none;
+    color: #000;
+}
+
+#switchN a:hover{
+    color: #fff;
+}
+
+#switchP
+      {
+    position: absolute;
+    top: 20px;              
+    padding: 10px 18px;
+    background-color: #ffffff25;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    left: 20px;
+    }
+    #switchP:hover {
+    background-color: #010101;
+}
+
+#switchP a{
+    text-decoration: none;
+    color: #000;
+}
+
+#switchP a:hover{
+    color: #fff;
+}
+
+    
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+      ◒
+    </div>
+
+
+    <!-- Navigation -->
+    <ul class="nav-links">
+      <li>
+        <a href="#">Work</a>
+      </li>
+
+      <li>
+        <a href="#">About</a>
+      </li>
+
+      <li>
+        <a href="#">Playground</a>
+      </li>
+
+      <li>
+        <a href="#">Resource</a>
+      </li>
+    </ul>
+
+
+    <!-- Email -->
+    <a
+      href="mailto:ihyaet@gmail.com"
+      class="email"
+    >
+      ihyaet@gmail.com
+    </a>
+
+  </nav>
+
+<div>
+<button id="switchN"><a href="index3.html">Next page →</a></button>
+</div>
+
+<div>
+<button id="switchP"><a href="index.html">← Previous Page</a></button>
+</div>
+
+</body>
+</html>
