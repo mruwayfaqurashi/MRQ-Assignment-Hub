@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youtube CLone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn menu-btn" aria-label="Open menu">☰</button>
+
+    <a class="brand" href="#">
+      <span class="brand-mark">▶</span>
+      <span class="brand-name">You<span>Tube</span></span>
+    </a>
+
+    <div class="search-wrap">
+      <input type="search" placeholder="Search" aria-label="Search videos" />
+      <button class="search-btn" aria-label="Search">⌕</button>
+    </div>
+
+    <button class="icon-btn mic-btn" aria-label="Voice search"><img src="Icons/mic icon.svg" alt=""></button>
+
+    <div class="top-actions">
+      <button class="icon-btn" aria-label="Create"><img src="Icons/video_plus_icon_136058.svg" alt=""></button>
+      <button class="icon-btn" aria-label="Apps"><img src="Icons/grid-view-icon.svg" alt=""></button>
+      <button class="icon-btn" aria-label="Notifications"><img src="Icons/bell-icon.svg" alt=""></button>
+      <div class="avatar">R</div>
+    </div>
+  </header>
+
+  <div class="page">
+    <aside class="sidebar">
+      <nav>
+        <a class="nav-item active" href="#"><span><img src="Icons/home.svg" alt=""></span> Home</a>
+        <a class="nav-item" href="#"><span><img src="Icons/compass-icon.svg" alt=""></span> Explore</a>
+        <a class="nav-item" href="#"><span><img src="Icons/subscription.svg" alt=""></span> Subscriptions</a>
+
+        <div class="divider"></div>
+
+        <a class="nav-item" href="#"><span><img src="Icons/video-file-icon.svg" alt=""></span> Library</a>
+        <a class="nav-item" href="#"><span><img src="Icons/history.svg" alt=""></span> History</a>
+        <a class="nav-item" href="#"><span><img src="Icons/movie-videos-icon.svg" alt=""></span> Your videos</a>
+        <a class="nav-item" href="#"><span><img src="Icons/clock-icon.svg" alt=""></span> Watch later</a>
+        <a class="nav-item" href="#"><span><img src="Icons/like-button-black-icon.svg" alt=""></span> Liked videos</a>
+
+        <div class="divider"></div>
+        <h3>SUBSCRIPTIONS</h3>
+        <a class="nav-item" href="#"><span><img src="Icons/music.svg" alt=""></span> Music</a>
+        <a class="nav-item" href="#"><span><img src="Icons/champion-winner-icon.svg" alt=""></span> Sports</a>
+        <a class="nav-item" href="#"><span><img src="Icons/gaming.svg" alt=""></span> Gaming</a>
+        <a class="nav-item" href="#"><span><img src="Icons/newspaper-icon.svg" alt=""></span> News</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="categories">
+        <button class="chip selected">All</button>
+        <button class="chip">Music</button>
+        <button class="chip">Mixes</button>
+        <button class="chip">User interface design</button>
+        <button class="chip">Nollywood</button>
+        <button class="chip">Logos</button>
+        <button class="chip">Graphic design</button>
+        <button class="chip">Website</button>
+        <button class="chip">Computer Science</button>
+        <button class="chip">Contemporary</button>
+        <button class="chip">Programming</button>
+        <button class="chip">Education</button>
+      </div>
+
+      <section class="video-grid">
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=80" alt="Medical students" />
+            <span class="duration">7:32</span>
+            <span class="ad">Ad</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon blue">A</div>
+            <div>
+              <h2>4-Year Medical Doctor Degree in UK</h2>
+              <p>AUC School of Medicine</p>
+              <p>Ready to start med school? • 92K views • 2 months ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=900&q=80" alt="UI design" />
+            <span class="duration">5:21</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon purple">D</div>
+            <div>
+              <h2>UI Design Trends 2026</h2>
+              <p>DesignSense</p>
+              <p>521K views • 5 months ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Music performance" />
+            <span class="duration">3:28</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon dark">X</div>
+            <div>
+              <h2>Complete Me | Official Music Video</h2>
+              <p>X3M Music</p>
+              <p>3.7M views • 3 years ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" alt="Data analyst" />
+            <span class="duration">7:50</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon green">W</div>
+            <div>
+              <h2>Data Analyst Career Switch | How I Became a Data Analyst</h2>
+              <p>The Work Life Man</p>
+              <p>56K views • 1 month ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Friends outdoors" />
+            <span class="duration">4:38:36</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon orange">S</div>
+            <div>
+              <h2>STUBBORN BILLIONAIRES — Complete Episode</h2>
+              <p>UGUEZU New Hits</p>
+              <p>410K views • 1 week ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="People on a computer" />
+            <span class="duration">13:04</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon yellow">T</div>
+            <div>
+              <h2>Linda Osifo and Olakira on The NdanITGIFShow</h2>
+              <p>NdanITGIFShow</p>
+              <p>82K views • 4 days ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80" alt="Graphic design work" />
+            <span class="duration">1:56:50</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon pink">N</div>
+            <div>
+              <h2>Designing a Complete Brand Identity with Illustrator</h2>
+              <p>Design Academy</p>
+              <p>214K views • 6 months ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80" alt="Professional speaker" />
+            <span class="duration">17:36</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon black">K</div>
+            <div>
+              <h2>7 Mistakes Ladies Make When They Like a Guy</h2>
+              <p>Kinglsey Okonkwo</p>
+              <p>1.2M views • 2 years ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80" alt="Team meeting" />
+            <span class="duration">10:15</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-icon red">C</div>
+            <div>
+              <h2>How to Build a Product Design Portfolio</h2>
+              <p>Creative Class</p>
+              <p>128K views • 3 weeks ago</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
